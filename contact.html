@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Contact - Leo Bell</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="tech-leo-logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="tech-leo-logo.png">
+    <link rel="apple-touch-icon" href="tech-leo-logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="theme-toggle-container">
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch" class="theme-switch">
+            <label for="theme-switch" class="theme-label">
+                <span class="theme-icon light-icon">☀️</span>
+                <span class="theme-icon dark-icon">🌙</span>
+                <div class="theme-slider"></div>
+            </label>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact page-content">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get Your Website Development Quote</h2>
+                <p class="section-subtitle">Professional Web Development—Bringing Your Vision to Life.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Multiple ways to reach me for your project needs. Choose your preferred method of communication.</p>
+                    
+                    <!-- Contact Methods -->
+                    <div class="contact-details">
+                        <div class="contact-item recommended">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-details-group">
+                                <span class="contact-title">(Recommended) Leo Bell: Lead Developer</span>
+                                <span class="contact-text">jlr083101@outlook.com</span>
+                                <button class="copy-btn" onclick="copyToClipboard('jlr083101@outlook.com', this)">Copy</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- Follow Me Section -->
+                    <div class="social-media">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/leo-bell-139b81223" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/jleorincon" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quote Request Form -->
+                <div class="quote-form-section">
+                    <h3>Request Your Project Quote</h3>
+                    <form class="quote-form">
+                        <div class="form-group">
+                            <label for="client-name">Name</label>
+                            <input type="text" id="client-name" name="name" required placeholder="Enter your full name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="client-email">Email</label>
+                            <input type="email" id="client-email" name="email" required placeholder="Enter your email address">
+                        </div>
+                        
+                        
+                        <div class="form-group">
+                            <label for="project-description">Project Description</label>
+                            <textarea id="project-description" name="description" rows="4" required placeholder="Describe your project needs, goals, and any specific requirements..."></textarea>
+                        </div>
+                        
+                        <button type="button" class="btn btn-primary quote-submit" onclick="submitQuote()">Get My Quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Leo Bell. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/jleorincon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

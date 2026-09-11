@@ -429,7 +429,7 @@ function submitQuote() {
     const formData = new FormData(form);
     
     // Validate required fields
-    const requiredFields = ['name', 'email', 'service', 'timeline', 'description'];
+    const requiredFields = ['name', 'email', 'description'];
     let isValid = true;
     let missingFields = [];
     
@@ -450,8 +450,6 @@ function submitQuote() {
     const quoteData = {
         name: formData.get('name'),
         email: formData.get('email'),
-        service: formData.get('service'),
-        timeline: formData.get('timeline'),
         description: formData.get('description')
     };
     
@@ -465,10 +463,6 @@ I would like to request a quote for website development.
 Client Details:
 - Name: ${quoteData.name}
 - Email: ${quoteData.email}
-
-Project Details:
-- Service Type: ${quoteData.service}
-- Timeline: ${quoteData.timeline}
 
 Project Description:
 ${quoteData.description}
@@ -515,6 +509,34 @@ ${name}
     const mailtoLink = `mailto:jlr083101@outlook.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
     window.location.href = mailtoLink;
 }
+
+// Dark Mode Toggle Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const themeSwitch = document.getElementById('theme-switch');
+    const body = document.body;
+    
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        body.classList.add('dark-theme');
+        if (themeSwitch) {
+            themeSwitch.checked = true;
+        }
+    }
+    
+    // Theme switch event listener
+    if (themeSwitch) {
+        themeSwitch.addEventListener('change', function() {
+            if (this.checked) {
+                body.classList.add('dark-theme');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                body.classList.remove('dark-theme');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    }
+});
 
 // Copy email function
 function copyEmail() {

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>About - Leo Bell</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="tech-leo-logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="tech-leo-logo.png">
+    <link rel="apple-touch-icon" href="tech-leo-logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="theme-toggle-container">
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch" class="theme-switch">
+            <label for="theme-switch" class="theme-label">
+                <span class="theme-icon light-icon">☀️</span>
+                <span class="theme-icon dark-icon">🌙</span>
+                <div class="theme-slider"></div>
+            </label>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link active">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="about page-content">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate about creating digital experiences</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Your Vision, My Code</h3>
+                    <p>
+                        I'm a dedicated freelance web developer who specializes in building custom websites 
+                        that perfectly capture your brand and business goals. With a keen eye for design and 
+                        a passion for clean, efficient code, I help businesses establish a strong online presence.
+                    </p>
+                    <p>
+                        Whether you need a simple landing page, a complex web application, or a complete 
+                        e-commerce solution, I'm here to turn your ideas into reality.
+                    </p>
+                    <div class="credentials-section">
+                        <div class="credential-item">
+                            <img src="auburn-logo.png" alt="Auburn University" class="credential-logo">
+                            <div class="credential-text">
+                                <h4>Computer Science Degree</h4>
+                                <p>Auburn University</p>
+                            </div>
+                        </div>
+                        <div class="credential-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div class="credential-text">
+                                <h4>Professional Network</h4>
+                                <a href="https://www.linkedin.com/in/leo-bell-139b81223" target="_blank">Connect on LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-skills">
+                    <h3>What I Do</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <h4>Frontend Development</h4>
+                            <p>HTML, CSS, JavaScript, React, Vue.js</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <h4>Backend Development</h4>
+                            <p>Node.js, Python, PHP, Database Design</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Responsive Design</h4>
+                            <p>Mobile-first, Cross-browser compatibility</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-globe"></i>
+                            <h4>Maintain Domains</h4>
+                            <p>Domain management, DNS configuration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Leo Bell. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/jleorincon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

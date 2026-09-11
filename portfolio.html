@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Portfolio - Leo Bell</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="tech-leo-logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="tech-leo-logo.png">
+    <link rel="apple-touch-icon" href="tech-leo-logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="theme-toggle-container">
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch" class="theme-switch">
+            <label for="theme-switch" class="theme-label">
+                <span class="theme-icon light-icon">☀️</span>
+                <span class="theme-icon dark-icon">🌙</span>
+                <div class="theme-slider"></div>
+            </label>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio page-content">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="blackjack-cover">
+                            <div class="playing-cards">
+                                <div class="card card-1">
+                                    <div class="card-corner top-left">A</div>
+                                    <div class="card-suit">♠</div>
+                                    <div class="card-corner bottom-right">A</div>
+                                </div>
+                                <div class="card card-2">
+                                    <div class="card-corner top-left">K</div>
+                                    <div class="card-suit">♥</div>
+                                    <div class="card-corner bottom-right">K</div>
+                                </div>
+                            </div>
+                            <div class="blackjack-title">BLACKJACK</div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Interactive Blackjack Training</h3>
+                        <p>Master Blackjack with interactive training featuring Play Mode, Learn Mode, and Traditional Count Mode with AI guidance and card counting practice.</p>
+                        <div class="portfolio-links">
+                            <a href="https://blackjack-rosy-rho.vercel.app/" target="_blank" class="portfolio-link">
+                                <i class="fas fa-external-link-alt"></i> Play Here
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="rag-cover">
+                            <div class="rag-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="rag-title">RAG SYSTEM</div>
+                            <div class="rag-subtitle">AI Document Analysis</div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>AI Document Analysis System</h3>
+                        <p>Intelligent document analysis and search powered by advanced AI. Upload documents to retrieve relevant information using AI with real-time chat interface.</p>
+                        <div class="portfolio-links">
+                            <a href="https://ragsystem-olive.vercel.app/" target="_blank" class="portfolio-link">
+                                <i class="fas fa-external-link-alt"></i> Click to Try
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="cover-letter-cover">
+                            <div class="document-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="cover-letter-title">COVER LETTER</div>
+                            <div class="cover-letter-subtitle">Generator</div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Cover Letter Generator</h3>
+                        <p>Tailored letters from your resume. Paste a job description, upload your resume, and get a one-page ATS-friendly cover letter you can edit and export.</p>
+                        <div class="portfolio-links">
+                            <a href="https://cover-letter-generator-lovat.vercel.app/" target="_blank" class="portfolio-link">
+                                <i class="fas fa-external-link-alt"></i> Generate Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Leo Bell. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/jleorincon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
